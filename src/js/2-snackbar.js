@@ -26,14 +26,12 @@ form.addEventListener('submit', (event) => {
 
     createPromise(delay, isActive)
         .then((result) => {
-            console.log(`✅ Fulfilled promise in ${result}ms`);
             iziToast.success({
                 title: 'OK',
                 message: `✅ Fulfilled promise in ${result}ms`,
             });
         })
         .catch((result) => {
-            console.log(`❌ Rejected promise in ${result}ms`);
             iziToast.error({
                 title: 'Error',
                 message: `❌ Rejected promise in ${result}ms`,
