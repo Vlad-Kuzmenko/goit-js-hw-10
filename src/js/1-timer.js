@@ -12,7 +12,7 @@ const options = {
   defaultDate: new Date(),
   minuteIncrement: 1,
   onClose(selectedDates) {
-      console.log(selectedDates[0].toISOString());
+    //   console.log(selectedDates[0].toISOString());
       const currentDay = new Date();
       
       if (selectedDates[0].toISOString() < currentDay.toISOString()) {
